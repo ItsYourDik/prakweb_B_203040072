@@ -18,7 +18,7 @@ $barang = query("SELECT * FROM buku")
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Daftar Novel</title>
 </head>
 
@@ -48,13 +48,6 @@ $barang = query("SELECT * FROM buku")
 
     <div class="container">
       <div class="row row-cols-1 row-cols-md-5 g-1">
-        <?php if (empty($barang)) : ?>
-          <tr>
-            <td colspan="4">
-              <p style="color:red; font-style:italic;">Data Mobil JDM Tidak Ditemukan</p>
-            </td>
-          </tr>
-        <?php endif; ?>
         <?php foreach ($barang as $bk) : ?>
           <div>
             <div class="card text-bg-light border-light card1" style="width: 14rem;">

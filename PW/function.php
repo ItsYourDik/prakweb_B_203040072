@@ -1,7 +1,7 @@
 <?php
 function Koneksi()
 {
-  return mysqli_connect('localhost', 'root', '', 'prakweb_2022_b_203040072');
+  return mysqli_connect('localhost', 'root', '', 'prakweb_b_203040072');
 }
 
 function query($query)
