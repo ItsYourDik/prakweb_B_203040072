@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url('../Font/Montserrat/Montserrat-Bold.ttf');
+}
+
+.bar {
+  font-family: "Montserrat"
+}
+
+body {
+  background: #f1f5f8;
+}
+
+a .navbar-brand{
+  color: white;
+  text-decoration: none;
+}
+
+a:hover 
+{
+  color: white; 
+  text-decoration:none; 
+  cursor:pointer;  
+}
+
+.card1 {
+  background-image: url("../assets/slider/card1.jpg");
+  background-size: cover;
+  height: 500px;
+  transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-trasition: all .5s ease;
+  -webkit-trasition: all .5s ease;
+  -ms-trasition: all .5s ease;
+
+}
+
+.card1:hover {
+  box-shadow: 0 0 100px rgba(0, 0, 0, .5);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+  -o-box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+  -ms-box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+  z-index: 1000;
+  transform: scale(1.01);
+  -moz-transform: scale(1.01);
+  -o-transform: scale(1.01);
+  -webkit-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+
+}
