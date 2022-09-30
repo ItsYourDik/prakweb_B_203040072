@@ -44,6 +44,8 @@ $barang = query("SELECT * FROM buku")
       </div>
     </nav>
 
+    <h1>Hello</h1>
+
     <div class="container">
       <div class="row row-cols-1 row-cols-md-5 g-1">
         <?php if (empty($barang)) : ?>
