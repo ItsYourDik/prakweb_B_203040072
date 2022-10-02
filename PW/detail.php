@@ -23,11 +23,23 @@ $m = query("SELECT * FROM buku WHERE idBuku = $idBuku");
 
 <body>
   <div>
-    <nav class="navbar sticky-top bg-secondary">
-      <div class=" container">
-        <a href="index.php">
-          <span class="navbar-brand mb-0 text-white">DAFTAR NOVEL</span>
-        </a>
+    <nav class="navbar navbar-expand-lg sticky-top bg-secondary">
+      <div class="container">
+        <a class="navbar-brand text-white" style="font-family: Montserrat ;" href="index.php">DAFTAR NOVEL</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" style="font-family: Montserrat ;" href="tambah.php">TAMBAH NOVEL</a>
+            </li>
+          </ul>
+          <form class="d-flex" action="" method="POST">
+            <input class="form-control me-2" type="search" name="keyword" autocomplete="off" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit" name="cari">Search</button>
+          </form>
+        </div>
       </div>
     </nav>
 
