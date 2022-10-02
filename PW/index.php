@@ -1,11 +1,11 @@
 <?php
 require 'function.php';
-$barang = query("SELECT * FROM buku")
+$barang = query("SELECT * FROM buku");
 
-//ketika tombil cari di klik
-// if (isset($_POST['cari'])) {
-//   $barang = cari($_POST['keyword']);
-// }
+// ketika tombil cari di klik
+if (isset($_POST['cari'])) {
+  $barang = cari($_POST['keyword']);
+}
 
 ?>
 
@@ -43,7 +43,7 @@ $barang = query("SELECT * FROM buku")
             </li>
           </ul>
           <form class="d-flex" action="" method="POST">
-            <input class="form-control me-2" type="search" name="keyword" autocomplete="off" placeholder="Search" aria-label="Search">
+            <input class="form-control me-2" type="text" name="keyword" autocomplete="off" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-light" type="submit" name="cari">Search</button>
           </form>
         </div>
@@ -58,8 +58,8 @@ $barang = query("SELECT * FROM buku")
               <a href="detail.php?idBuku=<?= $bk["idBuku"] ?>">
                 <img src="img/<?= $bk["Gambar"]; ?>" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <p class="card-text ">Judul : <?= $bk["Judul"]; ?> </p>
-                  <p class="card-text">Tahun Terbit : <?= $bk["Tahun"]; ?> </p>
+                  <p class="card-text text-center"><?= $bk["Judul"]; ?> </p>
+                  <p class="card-text text-center"><?= $bk["Tahun"]; ?> </p>
                 </div>
               </a>
             </div>

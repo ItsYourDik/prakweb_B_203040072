@@ -153,8 +153,7 @@ function cari($keyword)
               WHERE 
               Judul LIKE '%$keyword%' OR
               Pengarang LIKE '%$keyword%' OR
-              Tahun LIKE '%$keyword%' OR
-              sinopsis LIKE '%$keyword%'
+              Tahun LIKE '%$keyword%'
               ";
 
   $result = mysqli_query($conn, $query);
