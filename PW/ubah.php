@@ -108,7 +108,7 @@ if (isset($_POST['ubah'])) {
             </div>
           </div>
         </div>
-        <button class="btn btn-success" type="submit" name="ubah">Success</button>
+        <button class="btn btn-success" type="submit" name="ubah">Ubah Data</button>
       </form>
     </div>
   </div>

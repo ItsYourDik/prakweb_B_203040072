@@ -95,7 +95,7 @@ if (isset($_POST['tambah'])) {
             </div>
           </div>
         </div>
-        <button class="btn btn-success" type="submit" name="tambah">Success</button>
+        <button class="btn btn-success" type="submit" name="tambah">Tambah Novel</button>
       </form>
     </div>
   </div>
