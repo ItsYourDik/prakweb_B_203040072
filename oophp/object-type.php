@@ -3,6 +3,7 @@
 //komik
 // game
 
+
 class Produk
 {
   public $judul,
@@ -12,7 +13,7 @@ class Produk
 
   public function __construct($judul = "judul", $penulis = "Penulis", $penerbit = "Penerbit", $harga = 0)
   {
-    $this->judu = $judul;
+    $this->judul = $judul;
     $this->penulis = $penulis;
     $this->penerbit = $penerbit;
     $this->harga = $harga;
@@ -24,13 +25,22 @@ class Produk
   }
 }
 
-$produk1 = new Produk("Naruto", "Masashi Kishimoto", "Shonen Jump", 30000);
+class CetakInfoProduk
+{
+  public function cetak($produk)
+  {
+    $str = "{$produk->judul} | {$produk->getlabel()}, (Rp. {$produk->harga})";
+    return $str;
+  }
+}
 
+$produk1 = new Produk("Naruto", "Masashi Kishimoto", "Shonen Jump", 30000);
 $produk2 = new Produk("Uncharted", "Neil Druckmann", "Sony Computer", 250000);
-$produk3 = new Produk("Dragon Ball");
 
 echo "komik :" . $produk1->getLabel();
 echo "<br>";
 echo "game :" . $produk2->getLabel();
 echo "<br>";
-var_dump($produk3);
+
+$infoProduk1 = new CetakInfoProduk();
+echo $infoProduk1->cetak($produk1);
